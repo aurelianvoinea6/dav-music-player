@@ -7,7 +7,7 @@ function chillHop() {
             artist: "C Y G N",
             cover: "https://chillhop.com/wp-content/uploads/2022/04/8cc8bdc59b30dd1f9d401cb485b8537d909e1f50-1024x1024.jpg",
             id: uuidv4(),
-            active: false,
+            active: true,
             color: ['#3C3F2A', '#718174'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=31589',
         },
