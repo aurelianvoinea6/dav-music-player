@@ -30,8 +30,14 @@ function App() {
     const duration = e.target.duration;
     //calculate percentage 
     const roundedCurrent = Math.round(current);
-    console.log(roundedCurrent);
-    setSongInfo({...songInfo, currentTime: current, duration});
+   const roundedDuration = Math.round(duration);
+   const animation = Math.round((roundedCurrent / roundedDuration) * 100);
+   console.log(animation);
+   
+    setSongInfo({...songInfo, 
+      currentTime: current, 
+      duration, 
+      animationPercentage:animation });
   };
   return (
     <div className="App">
