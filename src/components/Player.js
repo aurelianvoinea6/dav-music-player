@@ -31,8 +31,9 @@ const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying, setSongInfo, s
         let currentIndex = songs.findIndex((song) =>song.id === currentSong.id);
         if(direction === 'skip-forward'){
             setCurrentSong(songs[(currentIndex + 1) % songs.length]);
-            console.log(`next index ${currentIndex + 1}`);
-            console.log(`songs length ${songs.length}`);
+        }
+        if(direction === 'skip-back'){
+            setCurrentSong(songs[(currentIndex - 1) % songs.length]);
         }
     };
 
