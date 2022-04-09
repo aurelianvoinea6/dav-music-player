@@ -30,7 +30,7 @@ const Player = ({ audioRef,
             }
         });
         setSongs(newSongs);
-    },[currentSong]);
+    });
 
     //event handlers
     const playSongHandler = () =>{
