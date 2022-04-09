@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faAngleLeft, faAngleRight, faPause, } from '@fortawesome/free-solid-svg-icons';
 
-const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying }) => {
+const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying, setSongInfo, songInfo }) => {
     //event handlers
     const playSongHandler = () =>{
      if(isPlaying) {
@@ -13,12 +13,7 @@ const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying }) => {
         setIsPlaying(!isPlaying);
     }
     };
-    const timeUpdateHandler = (e) => {
-        const current = e.target.currentTime;
-        const duration = e.target.duration;
-        setSongInfo({...songInfo, currentTime: current, duration});
-    };
-    
+   
     //added the current time and rounded it
     const getTime = (time) =>{
         return(
@@ -29,13 +24,7 @@ const Player = ({ audioRef, currentSong, isPlaying, setIsPlaying }) => {
     const dragHandler = (e) => {
         audioRef.current.currentTime = e.target.value;
         setSongInfo({...songInfo}, {currentTime: e.target.value});
-    }
-
-    //State 
-    const [songInfo, setSongInfo] =useState({
-        currentTime: 0,
-        duration: 0,
-    });
+    };
 
     return(
        <div className="player">
