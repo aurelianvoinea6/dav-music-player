@@ -38,7 +38,9 @@ function App() {
       audioRef={audioRef} 
       setIsPlaying={setIsPlaying} 
       isPlaying={isPlaying}
-      currentSong={currentSong} />
+      currentSong={currentSong}
+      songs={songs}
+      setCurrentSong= {setCurrentSong} />
       <Library 
       audioRef={audioRef} 
       songs={songs} 
