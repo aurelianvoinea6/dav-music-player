@@ -6,20 +6,7 @@ const LibrarySong = ({ song, songs, setCurrentSong, id, audioRef, isPlaying, set
         setCurrentSong(selectedSong[0]);
         audioRef.current.play();
         //add active state
-        const newSongs = songs.map((song) =>{
-            if(song.id === id){
-                return{
-                    ...song,
-                    active: true,
-                };
-            }else{
-                return{
-                    ...song,
-                    active: false,
-                };
-            }
-        });
-        setSongs(newSongs);
+        
 
         //check if the song is playing
         if(isPlaying){
