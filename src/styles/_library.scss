@@ -6,7 +6,7 @@
     width: 20rem;
     height: 100%;
     background-color: black;
-    box-shadow: 2px 2px 50px rgb(27, 78, 42);
+    box-shadow: 2px 2px 25px rgb(227, 233, 149);
     overflow: scroll;
     h2{
         padding: 2rem;
@@ -22,7 +22,7 @@
         width: 40%;
     }
     &:hover{
-        background: rgb(27, 78, 42);
+        background: #302f53;
     }
 }
 
@@ -38,7 +38,7 @@
 
 *{
     scrollbar-width: thin;
-    scrollbar-color: rgba(155,155,155,0.5) transparent;
+    scrollbar-color: rgba(20,230,76,0.5) transparent;
 }
 *::-webkit-scrollbar{
     width: 5px;
@@ -47,7 +47,8 @@
     background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(155, 155, 155, 0.5);
+    background-color: rgba(20, 230, 76, 0.5);
     border-radius: 20px;
     border: transparent;
 }
+
