@@ -48,6 +48,80 @@ function chillHop() {
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=31516',
         },
         //more coming soon
+        {
+            name: "Soulssounds",
+            artist: "Parkbench Epiphany",
+            cover: "https://chillhop.com/wp-content/uploads/2021/11/4c9682ee612a3b8ef51de286c49b5489408e9257-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#BE9798', '#3C525F'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=27500',
+        },
+        {
+            name: "Everlight",
+            artist: "Parkbench Epiphany",
+            cover: "https://chillhop.com/wp-content/uploads/2021/11/4c9682ee612a3b8ef51de286c49b5489408e9257-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#BE9798', '#3C525F'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=27501',
+        },
+        {
+            name: "Cabaña",
+            artist: "Juan Rios",
+            cover: "https://chillhop.com/wp-content/uploads/2021/07/4163ebb931e06d4ee8eb184295c0246d4a5055f7-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#FE816A', '#6C396C'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=21647',
+        },
+        {
+            name: "Glaciar",
+            artist: "Juan Rios, chief",
+            cover: "https://chillhop.com/wp-content/uploads/2021/07/4163ebb931e06d4ee8eb184295c0246d4a5055f7-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#FE816A', '#6C396C'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=21648',
+        },
+        {
+            name: "Where The Sun Goes",
+            artist: "Delayde, anybodyy",
+            cover: "https://chillhop.com/wp-content/uploads/2021/09/6a9ef8ac00e168d3308fdf9e336874c03fab829d-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#F8FEFE', '#885FD2'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=23188',
+        },
+        {
+            name: "There and Back",
+            artist: "Delayde, anybodyy",
+            cover: "https://chillhop.com/wp-content/uploads/2021/09/6a9ef8ac00e168d3308fdf9e336874c03fab829d-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#F8FEFE', '#885FD2'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=31589',
+        },
+        {
+            name: "Bae",
+            artist: "Misha",
+            cover: "https://chillhop.com/wp-content/uploads/2020/07/73c3f09a55221100b520fa131f14e2b09c7f4a81-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#F9C5AF', '#F9F9F9'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=8639',
+        },
+        
+        {
+            name: "Shine",
+            artist: "Ruck P, The Kount",
+            cover: "https://chillhop.com/wp-content/uploads/2021/07/034f52eeaeceb144cca67b0930d705d32fc39e37-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#CC8188', '#FDA465'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=20565',
+        }
+        
     ];
 }
 
