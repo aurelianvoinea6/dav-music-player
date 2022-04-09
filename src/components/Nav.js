@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMusic} from '@fortawesome/free-solid-svg-icons';
 
 
-const Nav = () => {
+const Nav = ({setLibraryStatus, libraryStatus}) => {
     return (
         <nav>
-            <h1>DAV Music Player</h1>
-            <button>
+            <h1> Music Player</h1>
+            <button onClick={() => setLibraryStatus(!libraryStatus)}>
                 Library 
                 <FontAwesomeIcon icon={faMusic} />
             </button>
