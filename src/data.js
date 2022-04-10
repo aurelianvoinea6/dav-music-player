@@ -147,6 +147,24 @@ function chillHop() {
                 color: ['#F2EFF2', '#EAF0EC'],
                 audio: 'https://s3.amazonaws.com/pb_previews/423_can-you-feel-love/423_full_can-you-feel-love_0138_preview.mp3',
         },
+        {
+            name: "Reunion",
+            artist: "Stan Forebee",
+            cover: "https://chillhop.com/wp-content/uploads/2022/01/f8a2b91e3d3862dc91cd27e3f82ddc089c0ccd58-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#A79EA8', '#DAD0B6'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=30137',
+        },
+        {
+            name: "Somber Sky",
+            artist: "oddfish",
+            cover: "https://chillhop.com/wp-content/uploads/2022/01/c8729f09c7a1bf1143edf05091027770837d9e10-1024x1024.jpg",
+            id: uuidv4(),
+            active: false,
+            color: ['#39416A', '#DCD2B8'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=30295',
+        },
     ];
 }
 export default chillHop;
