@@ -44,6 +44,13 @@ input[type="range"]::-webkit-slider-thumb {
     width: 16px;
 }
 
+//fixed the input in firefox
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+}
+
 .track{
     background: rgb(36, 73, 52);
     width: 100%;
