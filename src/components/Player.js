@@ -15,9 +15,8 @@ const Player = ({
     setSongs,
     
 }) => {
-    //UseEffect
-    useEffect(() =>{
-        const newSongs = songs.map((song) =>{
+   const activeLibraryHandler = (nextPrev) => {
+       const newSongs = songs.map((song) =>{
             if(song.id === currentSong.id){
                 return{
                     ...song,
@@ -31,18 +30,16 @@ const Player = ({
             }
         });
         setSongs(newSongs);
-        console.log("hello from useEffect player.js");
-    }, [currentSong]);
-
+    }
     //event handlers
-    const playSongHandler = () =>{
-     if(isPlaying) {
+    const playSongHandler = () => {
+      if (isPlaying) {
         audioRef.current.pause();
         setIsPlaying(!isPlaying);
-    }else{
+      } else {
         audioRef.current.play();
         setIsPlaying(!isPlaying);
-    }
+      }
     };
    
     //added the current time and rounded it
@@ -62,14 +59,17 @@ const Player = ({
         let currentIndex = songs.findIndex((song) =>song.id === currentSong.id);
         if(direction === 'skip-forward'){
             await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+            activeLibraryHandler(songs[(currentIndex + 1) % songs.length]);
         }
         if(direction === 'skip-back'){
             if((currentIndex - 1) % songs.length === -1){
-               await setCurrentSong(songs[songs.length -1]);
+                await setCurrentSong(songs[songs.length -1]);
+                activeLibraryHandler(songs[songs.length -1])
                 if(isPlaying) audioRef.current.play();
                 return;
             }
             await setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+            activeLibraryHandler(songs[(currentIndex - 1) % songs.length]);
         }
         if(isPlaying) audioRef.current.play();
     };

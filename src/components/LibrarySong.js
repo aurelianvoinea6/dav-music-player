@@ -27,9 +27,7 @@ const LibrarySong = ({
           };
         }
       });
-      console.log('select song');
       setSongs(newSongs);
-
       //Play audio
       if(isPlaying) audioRef.current.play();
       
