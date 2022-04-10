@@ -28,6 +28,7 @@ const LibrarySong = ({ song,
 
       //Play audio
       if(isPlaying) audioRef.current.play();
+      
     };
     return(
        <div onClick={songSelectHandler} className={`library-song ${song.active ? 'selected' : ""}`}>

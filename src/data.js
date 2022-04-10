@@ -100,7 +100,7 @@ function chillHop() {
             id: uuidv4(),
             active: false,
             color: ['#F8FEFE', '#885FD2'],
-            audio: 'https://mp3.chillhop.com/serve.php/?mp3=31589',
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=23192',
         },
         {
             name: "Bae",
@@ -111,7 +111,6 @@ function chillHop() {
             color: ['#F9C5AF', '#F9F9F9'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=8639',
         },
-        
         {
             name: "Shine",
             artist: "Ruck P, The Kount",
@@ -120,8 +119,7 @@ function chillHop() {
             active: false,
             color: ['#CC8188', '#FDA465'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=20565',
-        }
-        
+        },
     ];
 }
 
