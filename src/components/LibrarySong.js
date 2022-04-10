@@ -1,12 +1,15 @@
 import React from 'react';
 
 
-const LibrarySong = ({ song, 
+const LibrarySong = ({ 
+    song, 
     songs, 
     setCurrentSong, 
-    id, audioRef, 
+    id, 
+    audioRef, 
     isPlaying, 
-    setSongs}) => {
+    setSongs,
+  }) => {
     const songSelectHandler = async () => {
       const selectedSong = songs.filter((state) => state.id === id);
       await setCurrentSong({ ...selectedSong[0] });
