@@ -19,6 +19,7 @@
     p{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+        opacity: 0.5;
     }
 }
 
@@ -58,6 +59,7 @@ input[type="range"]::-moz-range-thumb {
     position: relative;
     border-radius:  1rem;
     overflow: hidden;
+    filter: drop-shadow(5px 5px 10px rgb(107, 65, 185));
 }
 
 .animate-track{
