@@ -14,9 +14,11 @@ nav{
         &:hover{
             background: rbg(65,65,65);
             color: rgb(20,230,76);
+            filter: drop-shadow(5px 5px 10px rgb(76, 216, 114));
         }
     }
 }
+
 
 @media screen and(max-width: 768px) {
     nav{
