@@ -8,6 +8,7 @@
     img{
         width: 20%;
         border-radius: 50%;
+        filter: drop-shadow(15px 15px 10px  rgb(107, 65, 185));
         
     }
     h2{
@@ -17,6 +18,8 @@
         font-size: 1rem;
     }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .song-container{
