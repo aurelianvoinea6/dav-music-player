@@ -50,29 +50,32 @@ function App() {
       <Song isPlaying={isPlaying} 
       currentSong={currentSong}
       />
-      <Player setSongInfo={setSongInfo} 
-      songInfo={songInfo} 
-      audioRef={audioRef} 
-      setIsPlaying={setIsPlaying} 
-      isPlaying={isPlaying}
-      currentSong={currentSong}
-      songs={songs}
-      setCurrentSong= {setCurrentSong}
-      setSongs={setSongs} 
+      <Player 
+        setSongInfo={setSongInfo} 
+        songInfo={songInfo} 
+        audioRef={audioRef} 
+        setIsPlaying={setIsPlaying} 
+        isPlaying={isPlaying}
+        currentSong={currentSong}
+        songs={songs}
+        setCurrentSong= {setCurrentSong}
+        setSongs={setSongs} 
       />
       <Library 
-      audioRef={audioRef} 
-      songs={songs} 
-      setCurrentSong={setCurrentSong} 
-      isPlaying={isPlaying} 
-      setSongs={setSongs}
-      libraryStatus={libraryStatus}/>
-      <audio onTimeUpdate={timeUpdateHandler} 
-      onLoadedMetadata={timeUpdateHandler} 
-      ref={audioRef} 
-      src={currentSong.audio}>
-      onEnded={songEndHandler}
-      </audio>
+        audioRef={audioRef} 
+        songs={songs} 
+        setCurrentSong={setCurrentSong} 
+        isPlaying={isPlaying} 
+        setSongs={setSongs}
+        libraryStatus={libraryStatus}
+      />
+      <audio 
+        onTimeUpdate={timeUpdateHandler} 
+        onLoadedMetadata={timeUpdateHandler} 
+        ref={audioRef} 
+        src={currentSong.audio}
+        onEnded={songEndHandler}
+      ></audio>
     </div>
   );
 }

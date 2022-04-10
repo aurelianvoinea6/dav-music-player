@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faAngleLeft, faAngleRight, faPause, } from '@fortawesome/free-solid-svg-icons';
 
 
-const Player = ({ audioRef, 
+const Player = ({ 
+    audioRef, 
     currentSong, 
     isPlaying, 
     setIsPlaying, 
@@ -30,7 +31,8 @@ const Player = ({ audioRef,
             }
         });
         setSongs(newSongs);
-    });
+        console.log("hello from useEffect player.js");
+    }, [currentSong]);
 
     //event handlers
     const playSongHandler = () =>{
