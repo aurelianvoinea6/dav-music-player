@@ -174,7 +174,7 @@ function chillHop() {
             color: ['#FCFCFC', '#717171'],
             audio: 'https://s3.amazonaws.com/pb_previews/418_summer-joy/418_full_summer-joy_0141_preview.mp3',
         },
-        // soon will come more ... or not //
+        // soon will come more ... or not // it depends
     ];
 }
 export default chillHop;
