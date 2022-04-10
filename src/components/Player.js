@@ -74,7 +74,7 @@ const Player = ({ audioRef,
 
     //add the styles 
     const trackAnim = {
-        transform: `translatex(${songInfo.animationPercentage}%)`
+        transform: `translateX(${songInfo.animationPercentage}%)`
     };
 
     return(
