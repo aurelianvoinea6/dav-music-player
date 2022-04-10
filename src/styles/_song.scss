@@ -8,7 +8,9 @@
     img{
         width: 20%;
         border-radius: 50%;
-        filter: drop-shadow(5px 5px 10px rgb(96, 30, 219));
+        filter: drop-shadow(15px 15px 10px rgb(96, 30, 219));
+    }img:hover{
+        filter: drop-shadow(15px 15px 20px rgb(76, 216, 114));
     }
     
     h2{
