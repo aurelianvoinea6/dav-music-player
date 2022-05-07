@@ -8,7 +8,8 @@ nav{
         background: transparent;
         color: white;
         cursor: pointer;
-        border: 2px solid rbg(65, 65, 65);
+        border: 2px solid #b8c0ff;
+        border-radius: 0.5rem;
         padding: 0.5rem;
         transition: all 0.3s ease;
         &:hover{
