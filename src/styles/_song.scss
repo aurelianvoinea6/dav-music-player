@@ -8,10 +8,13 @@
     img{
         width: 20%;
         border-radius: 50%;
-        filter: drop-shadow(15px 15px 10px rgb(96, 30, 219));
-    }img:hover{
-        filter: drop-shadow(15px 15px 20px rgb(76, 216, 114));
+        filter: drop-shadow(15px 15px 10px rgb(171, 152, 206));
+        transition: transform 10s ease-in-out;
     }
+        img:hover {
+            transform: rotate(360deg);
+            
+        }
     
     h2{
         padding: 3rem 1rem 1rem 1rem;
